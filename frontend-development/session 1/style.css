@@ -1,0 +1,86 @@
+html {
+  font-size: 16px;
+}
+
+h1 {
+  color: blueviolet;
+  color: rgb(46, 149, 90);
+  color: rgba(46, 149, 91, 0.75);
+  color: #ffffff;
+  color: #ffffff28;
+  color: hsl(0 80% 50% / 25%);
+}
+
+.cool-text {
+  color: blue;
+  font-weight: 600;
+}
+
+#special-text {
+  color: green;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+input {
+  font-size: 24px;
+}
+
+input[type="password"] {
+  padding: 16px;
+  border: 1px solid red;
+  border-radius: 8px;
+}
+
+body {
+  font-family: "Alegreya", serif;
+  /* background-color: blue;
+  background: linear-gradient(blue, yellow);
+  background: linear-gradient(90deg, blue, yellow);
+  background: linear-gradient(blue, yellow);
+  background-image: linear-gradient(to right, red , yellow); */
+  background-image: url(cat.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box {
+  background-color: aquamarine;
+  width: 200px;
+  width: 20%; /* 20% of the parent */
+  height: 100px;
+  height: 10rem;
+  height: 50vh;
+  margin: 1.5rem;
+}
+
+.cool-box {
+  background-color: blanchedalmond;
+  width: 400px;
+  height: 400px;
+  padding: 24px;
+  border: 2px solid black;
+  border-radius: 36px;
+  margin: 100px;
+  margin-left: 100px;
+  margin: 100px 50px;
+  margin: 0 auto;
+}
+
+.link {
+  color: red;
+}
+
+.link:hover {
+  color: pink;
+}
+
+.special-paragraph {
+  width: 300px;
+}
+
+.special-paragraph::first-line {
+  color: red;
+  font-variant: small-caps;
+}

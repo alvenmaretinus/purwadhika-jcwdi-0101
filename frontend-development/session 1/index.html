@@ -1,0 +1,242 @@
+<!-- doctype declaration -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- page metadata -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session 1</title>
+</head>
+<body>
+  <!-- headings -->
+  <h1>This is h1 (page title)</h1>
+  <h2>This is h2</h2>
+  <h3>This is h3</h3>
+  <h4>This is h4</h4>
+  <h5>This is h5</h5>
+  <h6>This is h6</h6>
+
+  <hr />
+
+  <!-- paragraph tag -->
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci tempore iure placeat eos numquam quaerat temporibus dolorum perferendis nemo fugiat, animi consectetur recusandae? Aliquid, voluptates eius dolores hic cum numquam.</p>
+
+  <!-- horizontal line -->
+  <hr />
+
+  <!-- break tag -->
+  this is line 1<br />
+  this is line 2
+
+  <hr />
+  
+  <!-- text formatting -->
+  <b>bold</b> <!-- styling -->
+  <i>italic</i> <!-- styling -->
+  <strong>strong</strong> <!-- semantic -->
+  <em>emphasized</em> <!-- semantic -->
+  <mark>marked</mark>
+  <small>small</small>
+  <del>deleted</del>
+  <ins>inserted</ins>
+  <sub>subscript</sub>
+  <sup>superscript</sup>
+
+  <!-- lists -->
+
+  <hr />
+
+  <!-- unordered list -->
+  <ul>
+    <li>apple</li>
+    <li>carrot</li>
+    <li>banana</li>
+    <li>spinach</li>
+    <li>watermelon</li>
+  </ul>
+
+  <!-- ordered list -->
+  <ol>
+    <li>book</li>
+    <li>paper</li>
+    <li>pen</li>
+    <li>bagpack</li>
+  </ol>
+
+  <hr />
+
+  <!-- table -->
+  <table>
+    <tr>
+      <!-- table heading -->
+      <th>Name</th>
+      <th>Age</th>
+      <th>Location</th>
+      <th>Sport</th>
+    </tr>
+    <!-- table row -->
+    <tr>
+      <!-- table data/cell -->
+      <td>Andi</td>
+      <td>19</td>
+      <td>Jakarta</td>
+      <td>Badminton</td>
+    </tr>
+    <tr>
+      <td>Susi</td>
+      <td>29</td>
+      <td>Jakarta</td>
+      <td>Ping pong</td>
+    </tr>
+    <tr>
+      <td>Henry</td>
+      <td>19</td>
+      <td>Pontianak</td>
+      <td>Futsal</td>
+    </tr>
+  </table>
+
+  <br />
+
+  <!-- table column span -->
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>DoB</th>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <center>Galih galih galih galih galih</center>
+      </td>
+    </tr>
+  </table>
+
+  <br />
+
+  <!-- table row span -->
+  <table>
+    <tr>
+      <th rowspan="2">Jakarta</th>
+      <td>A</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>D</td>
+    </tr>
+  </table>
+
+  <hr />
+
+  <!-- anchor tags -->
+  <a href="https://google.com">visit google</a>
+  <br />
+  <a href="https://google.com" target="_blank">visit google in new tab</a>
+  <br />
+  <a href="detail.html">visit detail page</a>
+
+  <hr />
+
+  <!-- image tag -->
+  <img src="cat.jpg" alt="this is a cat image" title="cute cat" width="500" />
+  <img src="https://dogsvictoria.org.au/media/1003/buying-a-dog.jpg" alt="this is a dog image" title="cute dog" width="500" />
+
+  <hr />
+
+  <!-- figure and caption tag -->
+  <figure>
+    <img src="cat.jpg" alt="this is a cat image" title="cute cat" width="500" />
+    <figcaption>This is a cat</figcaption>
+  </figure>
+
+  <hr />
+
+  <!-- forms -->
+  <form action="" method="post">
+    <!-- first way -->
+    <label>
+      <span>Text input 1: </span>
+      <input type="text">
+    </label>
+    <!-- second way -->
+    <label for="text-input">Text input 2:</label>
+    <input type="text" id="text-input" name="textInput2">
+    <br>
+    <input type="text" placeholder="input text">
+    <br>
+    <input type="password" placeholder="input password" name="password">
+    <br>
+    <input type="checkbox">
+    <span>apple</span>
+    <input type="checkbox">
+    <span>banana</span>
+    <br>
+      <input type="radio" id="huey" name="drone" value="huey" checked />
+      <label for="huey">Huey</label>
+    
+      <input type="radio" id="dewey" name="drone" value="dewey" />
+      <label for="dewey">Dewey</label>
+
+      <input type="radio" id="louie" name="drone" value="louie" />
+      <label for="louie">Louie</label>
+    <br>
+    <input type="number" min="0" max="10">
+    <br>
+    <textarea rows="3" cols="64"></textarea>
+
+    <br>
+
+    <!-- select -->
+    <div>Your favorite color?</div>
+    <select>
+      <option value="red">Red</option>
+      <option value="green">Green</option>
+      <option value="yellow" selected>Yellow</option>
+      <option value="blue">Blue</option>
+    </select>
+
+    <br>
+
+    <!-- fieldset -->
+    <fieldset>
+      <legend>Choose your favorite monster</legend>
+
+      <input type="radio" id="kraken" name="monster" value="K" />
+      <label for="kraken">Kraken</label><br />
+
+      <input type="radio" id="sasquatch" name="monster" value="S" />
+      <label for="sasquatch">Sasquatch</label><br />
+
+      <input type="radio" id="mothman" name="monster" value="M" />
+      <label for="mothman">Mothman</label>
+    </fieldset>
+
+    <br>
+
+    <!-- buttons -->
+
+    <!-- first way -->
+    <input type="submit" value="submit form!">
+    <!-- second way -->
+    <button type="submit">Submit form!</button>
+    <br>
+    <button type="reset">Reset form</button>
+  </form>
+
+  <hr>
+
+  <!-- divider - block element -->
+  <div>this is a content</div>
+  <div>this is a content</div>
+  <div>this is a content</div>
+  <div>this is a content</div>
+
+  <hr />
+
+  <!-- span - inline text tag - inline element -->
+  <span>this is text</span>
+  <span>this is text</span>
+  <span>this is text</span>
+  <span>this is text</span>
+</body>
+</html>
