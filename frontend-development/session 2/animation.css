@@ -1,0 +1,18 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: color-shifting;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes color-shifting {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+    transform: rotate(45deg) translate(500px, 500px);
+  }
+}
