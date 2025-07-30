@@ -17,7 +17,7 @@ export default async function DashboardUsersPage() {
   return (
     <div>
       <h1>Dashboard users list page</h1>
-      {data.map((user: any) => (
+      {data.map((user: Record<string, string>) => (
         <Link key={user.id} href={`/dashboard/users/${user.id}`} className="border border-solid border-white p-4 rounded-2xl mb-4 block">
           <div>id: {user.id}</div>
           <div>name: {user.name}</div>

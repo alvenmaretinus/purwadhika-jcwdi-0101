@@ -1,4 +1,4 @@
-export function generateMetadata({ params }: any) {
+export function generateMetadata({ params }: { params: { userId: string } }) {
   const { userId } = params;
 
   return {
