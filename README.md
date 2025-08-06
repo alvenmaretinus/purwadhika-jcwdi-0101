@@ -7,7 +7,7 @@ This repository contains all coding exercises, projects, and examples for the **
 📁 programming-fundamental/ - Basics of programming (variables, control flow, data types)  
 📁 frontend-development/ - HTML, CSS, JavaScript, React, etc.  
 📁 backend-development/ - Server-side programming, databases, APIs  
-📁 advanced-software-development/ - Design patterns, testing, CI/CD, architecture  
+📁 advanced-software-development/ - Design patterns, testing, CI/CD, architecture
 
 Beneath the folders you will find all sessions of the specific module.
 
@@ -20,11 +20,11 @@ git clone git@github.com:alvenmaretinus/purwadhika-jcwdi-0101.git
 cd purwadhika-jcwdi-0101
 
 # You can then navigate into any folder and explore the code, for example:
-
 cd programming-fundamental
 ```
 
 ## 📌 Requirements
+
 Depending on the folder, you may need:  
 ✅ A modern browser (Frontend)  
 ✅ Node.js & npm  

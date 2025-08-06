@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML + Javascript DOM</title>
+  </head>
+  <body>
+    <h1 id="myElement">Original Text</h1>
+    <button onclick="updateText()">Update text</button>
+
+    <hr />
+
+    <div class="paragraphContainer"></div>
+    <button onclick="appendParagraph()">Append paragraph</button>
+
+    <hr />
+
+    <h2>this is text</h2>
+    <h2>this is text</h2>
+    <h2>this is text</h2>
+    <h2>this is text</h2>
+    <h2>this is text</h2>
+    <button onclick="updateColor()">Update color</button>
+
+    <hr />
+
+    <button id="special-button">Alert user!</button>
+
+    <script>
+      function updateText() {
+        // const myElement = document.getElementById('myElement')
+        const myElement = document.querySelector('#myElement');
+        myElement.innerText = 'Updated Text';
+      }
+
+      function appendParagraph() {
+        const paragraphContainer = document.querySelector('.paragraphContainer');
+        const paragraph = document.createElement('p');
+        paragraph.textContent = 'This is a new paragraph';
+        paragraphContainer.appendChild(paragraph);
+      }
+
+      function updateColor() {
+        const text = document.getElementsByTagName('h2');
+        Array.from(text).forEach((element) => {
+          element.style.color = 'red';
+        });
+      }
+
+      // Event Listener
+      const specialButton = document.getElementById('special-button');
+      specialButton.addEventListener('click', () => {
+        alert('Be careful!');
+      });
+    </script>
+  </body>
+</html>

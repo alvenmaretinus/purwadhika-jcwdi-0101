@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f4d04e;
+  display: flex;
+  align-items: center; /* center vertically on flex direction row */
+  justify-content: center; /* center horizontally on flex direction row */
+}
+
+.card {
+  width: 384px;
+  border-radius: 20px; /* sets rounded corners */
+  border: 1px solid #111;
+  padding: 24px;
+  box-shadow: 8px 8px 0px 0px #000000;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.card-date {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #111;
+}
+
+.card-title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #111;
+  text-decoration: none;
+  align-self: flex-start;
+  transition: color cubic-bezier(0.175, 0.885, 0.32, 1.275) 300ms;
+}
+
+.card-title:hover {
+  color: #f4d04e;
+}
+
+.card-desc {
+  font-weight: 500;
+  line-height: 1.5;
+  color: #6b6b6b;
+}
+
+.card-tag {
+  padding: 4px 12px;
+  background-color: #f4d04e;
+  border-radius: 4px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.5;
+  width: min-content;
+}
+
+.card-author {
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+}
+
+.card-author > span {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #111;
+}
