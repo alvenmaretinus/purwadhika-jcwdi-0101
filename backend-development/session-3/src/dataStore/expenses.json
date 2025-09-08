@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "McDonald's Palmerah",
+    "type": 2,
+    "category": "Food",
+    "nominal": 100000,
+    "created": "2025-09-08T13:40:58.649Z",
+    "updated": "2025-09-08T14:32:55.609Z"
+  },
+  {
+    "id": 2,
+    "title": "KFC Jakarta Barat Branch",
+    "type": 2,
+    "category": "Food",
+    "nominal": 34000,
+    "created": "2025-09-08T13:41:13.285Z",
+    "updated": "2025-09-08T14:32:07.530Z"
+  },
+  {
+    "id": 3,
+    "title": "Nov salary from company xxx",
+    "type": 1,
+    "category": "Payroll",
+    "nominal": 50000000,
+    "created": "2025-09-08T14:02:41.383Z",
+    "updated": null
+  },
+  {
+    "id": 4,
+    "title": "Padel at BSD",
+    "type": 2,
+    "category": "sport",
+    "nominal": 250000,
+    "created": "2025-09-08T14:33:32.538Z",
+    "updated": null
+  }
+]
