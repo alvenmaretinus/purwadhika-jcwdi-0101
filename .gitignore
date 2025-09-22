@@ -7,3 +7,7 @@ node_modules
 
 # build
 dist
+
+# docker persistent volumes (postgres, pgadmin)
+pgdata/
+pgadmin-data/
