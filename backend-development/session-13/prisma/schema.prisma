@@ -1,3 +1,4 @@
+
 generator client {
   provider = "prisma-client-js"
 }
@@ -8,12 +9,16 @@ datasource db {
   directUrl = env("DIRECT_URL")
 }
 
-model Sample {
+model User {
+  id        Int      @id @default(autoincrement())
+  firstName String
+  lastName  String
+  email     String
+  createdAt DateTime
+  updatedAt DateTime @updatedAt
+}
+
+model Transaction {
   id        Int      @id @default(autoincrement())
   name      String
-  code      String   @unique
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  @@map("samples")
 }

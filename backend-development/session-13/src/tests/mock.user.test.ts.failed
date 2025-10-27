@@ -1,0 +1,42 @@
+import { prismaMock } from '../../setup_test/singleton';
+import { getUser } from '../../setup_test/function';
+
+test('should return an array of users', async () => {
+  prismaMock.user.findMany.mockResolvedValue([
+    {
+      id: 134,
+      firstName: 'John',
+      lastName: 'Doe',
+      email: 'johndoe@gmail.com',
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+    {
+      id: 28787,
+      firstName: 'Andy',
+      lastName: 'Doe',
+      email: 'andye@gmail.com',
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+  ]);
+
+  await expect(getUser()).resolves.toEqual([
+    {
+      id: 134,
+      firstName: 'John',
+      lastName: 'Doe',
+      email: 'johndoe@gmail.com',
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+    {
+      id: 28787,
+      firstName: 'Andy',
+      lastName: 'Doe',
+      email: 'andye@gmail.com',
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+  ]);
+});
