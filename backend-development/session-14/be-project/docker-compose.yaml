@@ -1,0 +1,33 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+      - "/app/node_modules"
+    depends_on:
+      - mysql-server
+      - redis-cache
+    networks:
+      - node-api-network
+
+  redis-cache:
+    image: redis:8.2.2
+    networks:
+      - node-api-network
+
+  mysql-server:
+    image: mysql:9.5.0
+    environment:
+      - MYSQL_DATABASE=test_db
+      - MYSQL_USER=testing
+      - MYSQL_PASSWORD=secret
+      - MYSQL_ROOT_PASSWORD=secret
+    networks:
+      - node-api-network
+
+networks:
+  node-api-network:
