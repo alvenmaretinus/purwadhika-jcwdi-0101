@@ -1,0 +1,11 @@
+:80 {
+	# Handle API requests - proxy to backend
+	handle /api* {
+		reverse_proxy {$BACKEND_HOST}:{$BACKEND_PORT}
+	}
+
+	# Handle all other requests - proxy to frontend
+	handle {
+		reverse_proxy {$FRONTEND_HOST}:{$FRONTEND_PORT}
+	}
+}
