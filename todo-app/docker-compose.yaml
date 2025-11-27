@@ -31,7 +31,7 @@ services:
       - NODE_ENV=development
       - TZ=${APP_TZ}
       - BACKEND_PORT=${BACKEND_PORT}
-      - POSTGRES_URL=${POSTGRES_URL}
+      - DATABASE_URL=${POSTGRES_URL}
       - REDIS_URL=${REDIS_URL}
     volumes:
       - ./backend:/app/backend
